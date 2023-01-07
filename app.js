@@ -8,7 +8,12 @@ const tasks = require("./routes/tasks")
 app.use(express.json());
 
 //routes
-app.use("/api/v1/tasks", tasks)
+app.use("/", tasks)
+
+app.use((req, res, next) => {
+    res.status(404)
+    res.json({ msg: "Oops! Looks like you are lost" })
+})
 
 const PORT = process.env.PORT || 3000
 
