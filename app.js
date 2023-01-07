@@ -4,7 +4,6 @@ const connectDB = require("./db/connect");
 const tasks = require("./routes/tasks")
 
 //middleware
-app.use(express.static("public"));
 app.use(express.json());
 
 //routes
