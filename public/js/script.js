@@ -24,7 +24,7 @@ document.querySelector('.left-menu .mobile-menu-closer').onclick = function (e) 
     document.querySelector('html').classList.remove('menu-opened');
 }
 
-function debounce (func) {
+function debounce(func) {
     var timer;
     return function (event) {
         if (timer) clearTimeout(timer);
@@ -32,7 +32,7 @@ function debounce (func) {
     };
 }
 
-function calculElements () {
+function calculElements() {
     var totalHeight = 0;
     elements = [];
     [].forEach.call(document.querySelectorAll('.content-section'), function (div) {
@@ -45,7 +45,7 @@ function calculElements () {
     onScroll();
 }
 
-function onScroll () {
+function onScroll() {
     var scroll = window.pageYOffset;
     console.log('scroll', scroll, elements)
     for (var i = 0; i < elements.length; i++) {
