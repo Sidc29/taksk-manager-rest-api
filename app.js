@@ -21,10 +21,6 @@ var corsOptions = {
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html")
-})
-
 //routes
 app.use("/api/v1/tasks", tasksRouter);
 
