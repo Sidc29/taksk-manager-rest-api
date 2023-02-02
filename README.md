@@ -1,7 +1,7 @@
 
 # Task Manager REST API
 
-The Task Manager REST API is a web-based API that allows clients to interact with a Task Manager application over the internet. It provides a set of endpoints that can be used to manage tasks, such as creating, reading, updating, and deleting tasks. The API uses standard HTTP methods, such as GET, POST, PUT, and DELETE, to perform these operations.
+The Task Manager REST API is a web-based API that allows clients to interact with a Task Manager application over the internet. It provides a set of endpoints that can be used to manage tasks, such as creating, reading, updating, and deleting tasks. The API uses standard HTTP methods, such as GET, POST, PATCH, and DELETE, to perform these operations.
 
 Some of the key features of the Task Manager REST API include:
 
